@@ -1,18 +1,31 @@
 {
   "@context": {
+    "@language": "en-us",
     "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
     "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
     "hashAlgorithm": "CIP100:hashAlgorithm",
     "body": {
       "@id": "CIP119:body",
       "@context": {
+        "bio": "CIP119:bio",
+        "doNotList": "CIP119:doNotList",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
         "references": {
           "@id": "CIP119:references",
           "@container": "@set",
           "@context": {
             "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
-            "Identity": "CIP119:IdentityReference",
-            "Link": "CIP119:LinkReference",
             "Other": "CIP100:OtherReference",
             "label": "CIP100:reference-label",
             "uri": "CIP100:reference-uri",
@@ -24,14 +37,7 @@
               }
             }
           }
-        },
-        "paymentAddress": "CIP119:paymentAddress",
-        "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
-        "objectives": "CIP119:objectives",
-        "motivations": "CIP119:motivations",
-        "qualifications": "CIP119:qualifications",
-        "doNotList": "CIP119:doNotList"
+        }
       }
     },
     "authors": {
@@ -50,20 +56,63 @@
       }
     }
   },
-  "authors": [],
-  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a40101032720062158202628872c5e16f1b8563856c200da5a394459c6e4c5cd0642d0fa691d5a563974"
+        },
+        "signature": {
+          "@value": "845846a20127676164647265737358390135a6086c53370505c27fb3fcb31a7b0a9c7e162c50a8de9477029639a103a99e238e13499b002debb921d17bf93ae41578bf15b5a6eecabca166686173686564f5581c115a786bba5a5f5400f6486553e77bfd69da88be1ff2044d4fb9b0855840a2409937167e719b5f3ec9f1cb85d3159c74e8f2cffec659d52a6c53759d0a7cae2d90533314626fec379b9f1d0102c25338f74201a445774559741634ba7a05"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
   "body": {
-    "doNotList": false,
-    "givenName": "RichardMcCorkle",
-    "motivations": "Bread and Roses for all.\n\nMy motivation arises from witnessing the unchecked dominance of monopolies and tech giants, coupled with the weakening of anti-trust laws, which has led to escalating inequality and stifled innovation. The growing influence of these entities—often propelled by corporate lobbying and shielded by think tanks and undisclosed funding—has pushed both societal and ecological boundaries to the brink. These forces not only amplify financial exclusion but also drive environmental degradation, pushing marginalised voices further to the periphery. The status quo benefits a small elite, who manipulate the minority as the thin end of the wedge to hijack power, leaving the majority struggling under systems designed to maintain the concentration of wealth and control.\n\nAs a DRep, I am committed to challenging these imbalances. My aim is to restore power to the community, ensuring that governance is transparent, inclusive, and accountable.  ",
-    "objectives": "My campaign is a call for \"bread and roses\"—the pursuit of both economic justice (\"bread\") and the beauty and dignity of life (\"roses\"). I believe that economic and political transformation, where society thrives within ecological and social boundaries, can be achieved through RealFi and crypto-based solutions. These technologies provide opportunities to dismantle financial exclusion by creating transparent, decentralised systems that address real-world needs. In a world increasingly dominated by monopolies and environmental degradation, RealFi offers a path toward resilience, fostering inclusive growth while safeguarding our planet. \n\nThis transformation addresses the systemic inequalities entrenched in current financial models. By leveraging blockchain technologies,  we can reshape the rules to ensure that prosperity is shared, resources are protected, and communities are empowered to shape their own futures. Promoting both social and environmental well-being.",
-    "paymentAddress": "addr1qy66vzrv2vms2pwz07elevc60v9fclsk93g23h55wupfvwdpqw5euguwzdyekqpdawujr5tmlyawg9tchu2mtfhwe27q9spua3",
-    "qualifications": "Chief Architect in Cybersecurity, 25+ years in finance, expert in Zero Trust, AI, Crypto, & Tokenomics, driving secure, innovative digital solutions.\n\nBSc In Biology\nMSc Computer Science\nMSc Digital and Technology Specialist ",
+    "bio": {
+      "@value": "Originally a biologist, I transitioned into IT with the intention of combining disciplines, but my path shifted. I now serve as the Chief Architect for Cybersecurity and Cloud Architecture, designing Information Security Assurance programs. With over 25 years of experience in the financial sector, my expertise lies in setting strategic IT direction using a risk-based, Zero Trust approach. My work focuses on developing Digital Security Programs that integrate security-by-design and privacy-by-design, leading initiatives around Digital Custodian of Cryptocurrencies, Identity Management, Zero Trust Strategies, cloud adoption, and Web 2.0/Web 3.0 infrastructures."
+    },
+    "doNotList": {
+      "@value": "false"
+    },
+    "email": {
+      "@value": "ada@neveryoumind.com"
+    },
+    "givenName": {
+      "@value": "RichardMcCorkle"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmSMo1GmwJJdxCTNhJtfSN5KtfBKYVEPQ5Pqq3eYuVueG7",
+      "sha256": "1f18d3ca71b055fe483080ee2e72737033222eed5e74845687fe2a7e1ab8c8d9"
+    },
+    "motivations": {
+      "@value": "Bread and Roses for all.\n\nMy motivation arises from witnessing the unchecked dominance of monopolies and tech giants, coupled with the weakening of anti-trust laws, which has led to escalating inequality and stifled innovation. The growing influence of these entities—often propelled by corporate lobbying and shielded by think tanks and undisclosed funding—has pushed both societal and ecological boundaries to the brink. These forces not only amplify financial exclusion but also drive environmental degradation, pushing marginalised voices further to the periphery. The status quo benefits a small elite, who manipulate the minority as the thin end of the wedge to hijack power, leaving the majority struggling under systems designed to maintain the concentration of wealth and control.\n\nAs a DRep, I am committed to challenging these imbalances. My aim is to restore power to the community, ensuring that governance is transparent, inclusive, and accountable.  "
+    },
+    "objectives": {
+      "@value": "My campaign is a call for \"bread and roses\"—the pursuit of both economic justice (\"bread\") and the beauty and dignity of life (\"roses\"). I believe that economic and political transformation, where society thrives within ecological and social boundaries, can be achieved through RealFi and crypto-based solutions. These technologies provide opportunities to dismantle financial exclusion by creating transparent, decentralised systems that address real-world needs. In a world increasingly dominated by monopolies and environmental degradation, RealFi offers a path toward resilience, fostering inclusive growth while safeguarding our planet. \n\nThis transformation addresses the systemic inequalities entrenched in current financial models. By leveraging blockchain technologies,  we can reshape the rules to ensure that prosperity is shared, resources are protected, and communities are empowered to shape their own futures. Promoting both social and environmental well-being."
+    },
+    "paymentAddress": {
+      "@value": "addr1qy66vzrv2vms2pwz07elevc60v9fclsk93g23h55wupfvwdpqw5euguwzdyekqpdawujr5tmlyawg9tchu2mtfhwe27q9spua3"
+    },
+    "qualifications": {
+      "@value": "Chief Architect in Cybersecurity, 25+ years in finance, expert in Zero Trust, AI, Crypto, & Tokenomics, driving secure, innovative digital solutions.\n\nBSc In Biology\nMSc Computer Science\nMSc Digital and Technology Specialist \n\n\nCertified Blockchain Professional – EC-COUNCIL\nCISSP - Certified Information System Security Professional\nCCSP – Certified Cloud Security Professional\nAMAZON AWS Certified Solutions Architect (Expired)\nMICROSOFT AZURE Solution Architect Expert (Expired)\nTOGAF 9 Foundation & Practitioner - Certified\nGDPR – Certified Foundation & Practitioner"
+    },
     "references": [
       {
-        "@type": "Link",
-        "label": "LinkedIn",
-        "uri": "www.linkedin.com/in/rmccorkl"
+        "@type": "Other",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "www.linkedin.com/in/rmccorkl"
+        }
       }
     ]
   }
