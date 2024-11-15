@@ -1,18 +1,29 @@
 {
   "@context": {
+    "@language": "en-us",
     "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
     "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
     "hashAlgorithm": "CIP100:hashAlgorithm",
     "body": {
       "@id": "CIP119:body",
       "@context": {
+        "doNotList": "CIP119:doNotList",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
         "references": {
           "@id": "CIP119:references",
           "@container": "@set",
           "@context": {
             "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
-            "Identity": "CIP119:IdentityReference",
-            "Link": "CIP119:LinkReference",
             "Other": "CIP100:OtherReference",
             "label": "CIP100:reference-label",
             "uri": "CIP100:reference-uri",
@@ -24,14 +35,7 @@
               }
             }
           }
-        },
-        "paymentAddress": "CIP119:paymentAddress",
-        "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
-        "objectives": "CIP119:objectives",
-        "motivations": "CIP119:motivations",
-        "qualifications": "CIP119:qualifications",
-        "doNotList": "CIP119:doNotList"
+        }
       }
     },
     "authors": {
@@ -50,15 +54,43 @@
       }
     }
   },
-  "authors": [],
-  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a4010103272006215820d7d2647ed178ee282c6a15df1ec8694357ebd4a656b45181006d240d523e4395"
+        },
+        "signature": {
+          "@value": "845829a201276761646472657373581c53ec40a7a3859e2a52354f0fb5ef50ff9040623816b8dc2775ec564fa166686173686564f5581c115a786bba5a5f5400f6486553e77bfd69da88be1ff2044d4fb9b08558400b405215d6f18b0e0614b9ad11ef6fdbdbab4eb078c97a8753367711f161af317303c891d52c3e88941b1fef230f946c85f91f70bdb377ac48849c348cb0550f"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
   "body": {
-    "doNotList": false,
-    "givenName": "BreadAndRoses",
-    "motivations": "Bread and Roses for all.\n\nMy motivation arises from witnessing the unchecked dominance of monopolies and tech giants, coupled with the weakening of anti-trust laws, which has led to escalating inequality and stifled innovation. The growing influence of these entities—often propelled by corporate lobbying and shielded by think tanks and undisclosed funding—has pushed both societal and ecological boundaries to the brink. These forces not only amplify financial exclusion but also drive environmental degradation, pushing marginalised voices further to the periphery. The status quo benefits a small elite, who manipulate the minority as the thin end of the wedge to hijack power, leaving the majority struggling under systems designed to maintain the concentration of wealth and control.\n\nAs a DRep, I am committed to challenging these imbalances. My aim is to restore power to the community, ensuring that governance is transparent, inclusive, and accountable.  ",
-    "objectives": "My campaign is a call for \"bread and roses\"—the pursuit of both economic justice (\"bread\") and the beauty and dignity of life (\"roses\"). I believe that economic and political transformation, where society thrives within ecological and social boundaries, can be achieved through RealFi and crypto-based solutions. These technologies provide opportunities to dismantle financial exclusion by creating transparent, decentralised systems that address real-world needs. In a world increasingly dominated by monopolies and environmental degradation, RealFi offers a path toward resilience, fostering inclusive growth while safeguarding our planet. \n\nThis transformation addresses the systemic inequalities entrenched in current financial models. By leveraging blockchain technologies,  we can reshape the rules to ensure that prosperity is shared, resources are protected, and communities are empowered to shape their own futures. Promoting both social and environmental well-being.",
-    "paymentAddress": "addr1qy66vzrv2vms2pwz07elevc60v9fclsk93g23h55wupfvwdpqw5euguwzdyekqpdawujr5tmlyawg9tchu2mtfhwe27q9spua3",
-    "qualifications": "Chief Architect in Cybersecurity, 25+ years in finance, expert in Zero Trust, AI, Crypto, & Tokenomics, driving secure, innovative digital solutions.\n\nBSc In Biology\nMSc Computer Science\nMSc Digital and Technology Specialist \n\n\nCertified Blockchain Professional – EC-COUNCIL\nCISSP - Certified Information System Security Professional\nCCSP – Certified Cloud Security Professional\nAMAZON AWS Certified Solutions Architect (Expired)\nMICROSOFT AZURE Solution Architect Expert (Expired)\nTOGAF 9 Foundation & Practitioner - Certified\nGDPR – Certified Foundation & Practitioner",
+    "doNotList": {
+      "@value": "false"
+    },
+    "givenName": {
+      "@value": "BreadAndRoses"
+    },
+    "motivations": {
+      "@value": "Bread and Roses for all.\n\nMy motivation arises from witnessing the unchecked dominance of monopolies and tech giants, coupled with the weakening of anti-trust laws, which has led to escalating inequality and stifled innovation. The growing influence of these entities—often propelled by corporate lobbying and shielded by think tanks and undisclosed funding—has pushed both societal and ecological boundaries to the brink. These forces not only amplify financial exclusion but also drive environmental degradation, pushing marginalised voices further to the periphery. The status quo benefits a small elite, who manipulate the minority as the thin end of the wedge to hijack power, leaving the majority struggling under systems designed to maintain the concentration of wealth and control.\n\nAs a DRep, I am committed to challenging these imbalances. My aim is to restore power to the community, ensuring that governance is transparent, inclusive, and accountable.  "
+    },
+    "objectives": {
+      "@value": "My campaign is a call for \"bread and roses\"—the pursuit of both economic justice (\"bread\") and the beauty and dignity of life (\"roses\"). I believe that economic and political transformation, where society thrives within ecological and social boundaries, can be achieved through RealFi and crypto-based solutions. These technologies provide opportunities to dismantle financial exclusion by creating transparent, decentralised systems that address real-world needs. In a world increasingly dominated by monopolies and environmental degradation, RealFi offers a path toward resilience, fostering inclusive growth while safeguarding our planet. \n\nThis transformation addresses the systemic inequalities entrenched in current financial models. By leveraging blockchain technologies,  we can reshape the rules to ensure that prosperity is shared, resources are protected, and communities are empowered to shape their own futures. Promoting both social and environmental well-being."
+    },
+    "paymentAddress": {
+      "@value": "addr1qy66vzrv2vms2pwz07elevc60v9fclsk93g23h55wupfvwdpqw5euguwzdyekqpdawujr5tmlyawg9tchu2mtfhwe27q9spua3"
+    },
+    "qualifications": {
+      "@value": "Chief Architect in Cybersecurity, 25+ years in finance, expert in Zero Trust, AI, Crypto, & Tokenomics, driving secure, innovative digital solutions."
+    },
     "references": []
   }
 }
