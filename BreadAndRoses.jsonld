@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "BreadAndRoses"
+    },
+    "motivations": {
+      "@value": "Bread and Roses for all.\n\nMy motivation arises from witnessing the unchecked dominance of monopolies and tech giants, coupled with the weakening of anti-trust laws, which has led to escalating inequality and stifled innovation. The growing influence of these entities—often propelled by corporate lobbying and shielded by think tanks and undisclosed funding—has pushed both societal and ecological boundaries to the brink. These forces not only amplify financial exclusion but also drive environmental degradation, pushing marginalised voices further to the periphery. The status quo benefits a small elite, who manipulate the minority as the thin end of the wedge to hijack power, leaving the majority struggling under systems designed to maintain the concentration of wealth and control.\n\nAs a DRep, I am committed to challenging these imbalances. My aim is to restore power to the community, ensuring that governance is transparent, inclusive, and accountable.  "
+    },
+    "objectives": {
+      "@value": "My campaign is a call for \"bread and roses\"—the pursuit of both economic justice (\"bread\") and the beauty and dignity of life (\"roses\"). I believe that economic and political transformation, where society thrives within ecological and social boundaries, can be achieved through RealFi and crypto-based solutions. These technologies provide opportunities to dismantle financial exclusion by creating transparent, decentralised systems that address real-world needs. In a world increasingly dominated by monopolies and environmental degradation, RealFi offers a path toward resilience, fostering inclusive growth while safeguarding our planet. \n\nThis transformation addresses the systemic inequalities entrenched in current financial models. By leveraging blockchain technologies,  we can reshape the rules to ensure that prosperity is shared, resources are protected, and communities are empowered to shape their own futures. Promoting both social and environmental well-being."
+    },
+    "paymentAddress": {
+      "@value": "addr1qy66vzrv2vms2pwz07elevc60v9fclsk93g23h55wupfvwdpqw5euguwzdyekqpdawujr5tmlyawg9tchu2mtfhwe27q9spua3"
+    },
+    "qualifications": {
+      "@value": "Chief Architect in Cybersecurity, 25+ years in finance, expert in Zero Trust, AI, Crypto, & Tokenomics, driving secure, innovative digital solutions."
+    },
+    "references": []
+  }
+}
