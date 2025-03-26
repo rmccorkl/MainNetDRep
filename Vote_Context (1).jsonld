@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "After thorough consideration of the two proposals regarding the Net Change Limit for Cardano's treasury withdrawals, I have experienced a shift in perspective influenced by Charles Hoskinson's concerns. Initially, I was inclined to support the first proposal, which set a 2025 Net Change Limit of 350 million ADA, believing that a more substantial budget would be crucial for the ecosystem's growth in that pivotal year.​\n\nHowever, Charles Hoskinson, the founder of Cardano, has expressed significant reservations about the role of Intersect in managing these funds. He is particularly concerned about granting Intersect unilateral authority over fund distribution, emphasizing that such responsibilities should reside with the Delegated Representatives (DReps) elected by the community. Hoskinson asserts that Intersect lacks the necessary track record and democratic mandate to make funding decisions, advocating instead for a decentralized and community-driven approach to budget management. ​\nCardano Forum\n\nGiven these insights, I now recognize the importance of a more conservative approach to treasury spending that prioritizes transparency, accountability, and community governance. Therefore, I am persuaded to vote in favor of the second proposal, which establishes a 2025 Net Change Limit of 300 million ADA and a 2026 limit of 250 million ADA. This approach not only aligns with a prudent fiscal strategy but also ensures that fund allocation remains under the purview of the community-elected DReps, thereby upholding the decentralized ethos of the Cardano ecosystem."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
