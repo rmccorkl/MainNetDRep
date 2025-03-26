@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "Basic Issue\nCardano needs to set a spending cap—called a Net Change Limit (NCL)—on how much can be withdrawn from the treasury for the year 2025. Without this limit being formally agreed on, no budget proposals or withdrawals can legally happen for that year.\n\nCurrent State\nThere is no official Net Change Limit set for 2025.\nTreasury spending for 2025 is not authorized under the Cardano Constitution.\nProjects and governance actors cannot submit budget proposals yet.\n\nEnd State (What’s Changing)\nA Net Change Limit of 350,000,000,000,000 lovelace (350M ada) will be formally established.\nThis limit applies to the period from Epoch 532 to Epoch 604 (January to December 2025).\n\nOnce approved:\nBudget proposals and treasury withdrawals can be made, up to that cap.\nThe ecosystem enters an annual budget cycle with a clear spending boundary.\nThe limit is based on 2024’s treasury inflow (~336M ada), aligning spending with income.\n\nWhy It Matters\nIt ensures constitutional compliance, budget transparency, and financial responsibility.\nIt enables projects to start applying for funds.\nIt links treasury usage to actual blockchain usage and performance—rewarding ecosystem growth.\n\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
